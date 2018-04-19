@@ -1,0 +1,11 @@
+1.安装lua环境
+sudo apt-get install lua5.2
+
+2.安装帮助文档
+sudo apt-get install lua5.2-doc
+
+3.安装Lua相关头文件和库文件
+sudo apt-get install liblua5.2-dev
+
+4.查看lua版本看lua是否安装成功
+lua -v

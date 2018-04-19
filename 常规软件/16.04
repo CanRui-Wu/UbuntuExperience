@@ -1,0 +1,9 @@
+1. 到浙江大学镜像下载
+2. / 主分区 20-40G 
+    swap 20G,boot 1G,home剩下，逻辑分区
+3. 搜索additonal driver
+sudo apt-get install nvdia-xxx
+sudo apt-get install intel-microxxx
+再开启，关闭集显
+
+4. 搜索Navida xseting proxxx可以切换

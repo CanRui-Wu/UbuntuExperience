@@ -1,0 +1,37 @@
+1. 15.05版本
+git clone -b chaos_calmer git://github.com/openwrt/openwrt.git
+
+12.09版本
+git clone -b attitude_adjustment git://github.com/openwrt/openwrt.git
+
+
+2. 15.05版本 安装依赖
+sudo apt-get install build-essential binutils flex \
+bison autoconf gettext texinfo sharutils subversion \
+libncurses5-dev ncurses-term zlib1g-dev gawk git-core unzip
+
+解决相关依赖的低版本依赖问题 sudo aptitude install libssl-dev
+
+
+3. 配置相关
+openwrt的一些额外功能都是通过package实现的，很多个package就组成了一个feed，我们可以根据需求更新自己想要的feed的源。 
+./scripts/feeds update luci packages
+./scripts/feeds install luci package
+
+添加全部源
+./scripts/feeds update -a
+
+./scripts/feeds install -a
+
+make download V=99 可以在线下载源码包，即使断网也可以再次输入此命令继续下载 。OpenWRT默认会在trunk/dl目录下存放已下载和正在下载的源码包，即使make clean也不会删除这些源码包。make distclean命令才是删除所有dl目录下已下载的源码包，一般不推荐这样做。
+
+make tools/install   安装工具
+make toolchain/install  安装工具
+
+如果你的路由器flash空间比较紧张，可以去掉下面的包:
+
+    Kernel modules->Network Support->kmod-ppp
+    Network->ppp
+
+
+

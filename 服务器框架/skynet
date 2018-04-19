@@ -1,0 +1,8 @@
+1.clone到本地
+git clone https://github.com/cloudwu/skynet.git
+
+2.安装依赖 readline ncurses autoconf
+sudo apt-get install libreadline6 libreadline6-dev
+
+3.打开skynet目录
+make linux

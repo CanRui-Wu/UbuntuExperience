@@ -1,0 +1,13 @@
+licesnse:AA510-2DF1Q-H882Q-XFPQE-Q30A0
+ZY3TU-0PGD2-080ZQ-1GP59-WURTF
+ZG34U-F2ZE1-H85PQ-A7WZZ-XC8A2
+YA3JU-4DGD6-481NZ-MMQEZ-YPKDD
+CG1N2-6TFD7-M8E6Q-47MXC-YK89A
+
+https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html下载
+
+赋予权限 chmod
+
+用sudo来运行.bundle安装即可。
+
+注意，别安装成VMWARE workstation player了，一定是VMware workstation

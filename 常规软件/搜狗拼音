@@ -1,0 +1,26 @@
+依赖：fcitx libssh2-1
+1. 首先检查是否安装了依赖 
+dpkg -l |grep fcitx
+dpkg -l |grep libssh
+如果没安装
+sudo apt-get install fcitx libssh2-1
+
+2.到http://pinyin.sogou.com/linux下载对应的版本(deb文件) QA1
+安装命令
+sudo dpkg -i xxxxx.deb
+
+3.将system seting的language support（要安装完整）中的Keyboard input method system改为fcitx，登出后登入，然后搜索fctix Configuration应用，在Input method中添加Sogou Pinyin（记得取消勾选only show current language)，登出后登入即可。QA1
+
+4.如果有两个搜狗，那么先 
+sudo apt remove fcitx-module*
+然后再重装
+
+QA:
+1. No such key 'Gtk/IMModule' in schema 'org.gnome.settings-daemon.plugins.xsettings' as specified in override file '/usr/share/glib-2.0/schemas/50_sogoupinyin.gschema.override'; ignoring override for this key. 
+可以直接忽略
+
+sudo add-apt-repository ppa:fcitx-team/nightly
+sudo apt-get update
+sudo apt-get install fctix (sudo apt-get -f install)
+sudo apt-get install fcitx-config-gtk fcitx-table-all im-switch
+

@@ -1,0 +1,13 @@
+1. 创建一个WI-FI连接
+
+2. 使用模式改成ad-hoc 广播方式automatic
+
+3. 加密方式 WPA& WPA2 Personal
+
+4. IPv4 setting 将 Method 改成 Shared to other computers
+
+5. cd /etc/NetworkManager/system-connections
+sudo gedit xxxxx
+将mode改成ap
+
+6.点击连接刀隐藏的WI-FI 网络。

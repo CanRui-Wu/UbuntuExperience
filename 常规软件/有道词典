@@ -1,0 +1,12 @@
+1. 下载安装包
+http://codown.youdao.com/cidian/linux/youdao-dict_1.0.2~ubuntu_amd64.deb
+
+2. 安装
+sudo dpkg -i youdao-dict_1.0.2~ubuntu_amd64.deb
+
+3. 如果安装出错，需要先解决依赖问题，再次执行安装命令
+sudo apt-get -f install
+
+4. 运行测试
+youdao-dict
+

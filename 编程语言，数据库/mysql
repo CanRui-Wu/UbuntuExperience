@@ -1,0 +1,18 @@
+1. 安装mysql服务器
+sudo apt-get install mysql-server
+安装完毕后会要求输入mysql的root用户密码
+
+2. 安装mysql客户端
+sudo apt-get install mysql-client
+
+3. 安装依赖
+sudo apt-get install libmysqlclient-dev
+
+4. 测试
+sudo netstat -tap | grep mysql
+稍等一会，如果看到mysql的socket处于listen状态表示安装成功。
+
+5. 登录
+mysql -u root -p 
+xxxxx
+xxxxx为mysql root密码，即可登录使用mysql命令进行操作。

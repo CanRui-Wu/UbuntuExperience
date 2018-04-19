@@ -1,0 +1,8 @@
+1. 直接sudo apt-get install wireshark
+2. 默认只有root权限才能使用wireshark依赖的dumpcap
+我们可以添加工作组让普通用户可以完成
+sudo groupadd wireshark
+sudo chgrp wireshark /usr/bin/dumpcap
+sudo chmod 4755 /usr/bin/dumpcap
+sudo gpasswd -a wucanrui wireshark
+接下来用普通用户登录打开wireshark，就会有权限进行抓包了

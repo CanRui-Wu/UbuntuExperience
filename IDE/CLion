@@ -1,0 +1,8 @@
+https://www.jetbrains.com/clion/　下载，解压
+运行/clion/bin/clion.sh 安装
+
+破解服务器　http://idea.imsxm.com/
+在/usr/bin中创建/clion.sh的软链接，以便快捷启动
+
+CLion 采用CMAKE来生成makefile，并用gcc进行编译
+在导入已有的项目时选择import projects来自动生成CMakeListFile

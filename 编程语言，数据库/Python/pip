@@ -1,0 +1,9 @@
+1.pip安装
+sudo apt-get install python-pip
+
+2.查看帮助，验证是否成功安装
+pip --help
+
+3.pip install xxx
+pip install --upgrade xxx
+

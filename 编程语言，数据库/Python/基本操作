@@ -1,0 +1,8 @@
+1. 查询已安装的模块及其版本
+使用pip list或者进入python，执行help("modules")
+推荐使用前者，有版本。信息过多可以使用管道进行grep。
+
+2. 安装模块，更新模块
+pip install package_name
+pip install -U package_name
+

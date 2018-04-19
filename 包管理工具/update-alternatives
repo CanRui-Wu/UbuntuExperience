@@ -1,0 +1,12 @@
+1.使用install命令
+更新对应的版本列表
+update-alternatives: --install needs <link> <name> <path> <priority>
+
+
+2.使用 --config xxxx
+来选择更换的版本
+
+i.e.
+使用install将/usr/bin/python这个程序　起名python(用来config) (/usr/bin/python2.7 /usr/bin/python3.4)添加链接的列表  优先级
+接下来就可以使用config来实时切换啦。
+实际上在我们运行的时候，会去运行/usr/bin/python2.7或是/usr/bin/python3.4这个程序。

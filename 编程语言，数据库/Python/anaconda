@@ -1,0 +1,2 @@
+使用anaconda可以很轻松的管理多个python版本
+注意,如果使用anaconda，pip安装需要用anaconda/bin/中的pip才可以正确安装包。

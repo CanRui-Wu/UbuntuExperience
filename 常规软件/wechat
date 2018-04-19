@@ -1,0 +1,36 @@
+1.克隆https://github.com/geeeeeeeeek/electronic-wechat
+2.下载https://nodejs.org/en/download/current/ 放到/opt下
+3.sudo ln -s /opt/node-v8.5.0-linux-x64/bin/node /usr/local/bin/node
+sudo ln -s /opt/node-v8.5.0-linux-x64/bin/npm /usr/local/bin/npm
+创建软链接
+4. 设置淘宝源
+sudo npm config set registry https://registry.npm.taobao.org   //设置淘宝镜像
+source ~/.bashrc       //使修改立即生效    
+5. 安装并打开
+切
+npm install && npm start
+如果卡在install.js,那么设置~/.npmrc
+electron_mirror="https://npm.taobao.org/mirrors/electron/"
+
+6. 打包
+npm run build:linux
+7. /usr/share/applications设置快捷方式（注意删掉下面多余的空格）
+[Desktop Entry]  
+Categories=Development;  
+Comment[zh_CN]=  
+Comment=  
+Exec=/home/electronic-wechat/electronic-wechat  //此处为运行文件的位置  
+GenericName[zh_CN]=App  
+GenericName=App  
+Icon=/home/electronic-wechat/wechat.png          //wechat的logo位置  
+MimeType=  
+Name[zh_CN]=微信                       
+Name=wechat                   
+Path=  
+StartupNotify=true  
+Terminal=false  
+Type=Application  
+X-DBUS-ServiceName=  
+X-DBUS-StartupType=  
+X-KDE-SubstituteUID=false  
+X-KDE-Username=owen

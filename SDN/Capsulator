@@ -1,0 +1,15 @@
+1. 克隆下来
+git clone https://github.com/peymank/Capsulator
+
+2. 打开目录
+cd Capsulator
+
+3. 编译
+make
+
+这步可能会报gmake error，上网查了下，原来在ubuntu中已经取消掉了它，都用make代替。ubuntu-cn上也有人遇到这个问题，
+方法是把Makefile中的gmake全改为make。
+
+4. 测试
+./Capsulator 就会打印出帮助页面
+

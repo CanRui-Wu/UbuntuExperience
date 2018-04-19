@@ -1,0 +1,10 @@
+1. 到shadowsocks官网购买 www.shadowsocks.com 注意不要弄错成shadowshock这个疑似山寨网站。
+
+2. 等待返回的节点地址与端口，密码等信息，到https://github.com/shadowsocks/shadowsocks-qt5/wiki 查看ubuntu下图形界面如何操作即可。
+
+下载安装
+sudo add-apt-repository ppa:hzwhuang/ss-qt5
+sudo apt-get update
+sudo apt-get install shadowsocks-qt5
+
+3. 成功的例子是设置http协议(ss-qt和浏览器都设置），勾选全部协议使用，地址是127.0.0.1（本机地址),端口是设置的端口1080。

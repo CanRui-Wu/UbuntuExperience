@@ -1,0 +1,17 @@
+1. clone
+git clone https://github.com/intrig-unicamp/mininet-wifi
+
+2. 进入到mininet-wifi目录下安装
+sudo util/install.sh -Wnfv
+
+安装可选的项
+W: install Mininet-WiFi dependencies
+n: install Mininet dependencies + core files
+f: install OpenFlow
+3: install OpenFlow 1.3
+v: install Open Vswitch
+p: install POX OpenFlow Controller
+w: install Wireshark
+
+3. 关于依赖问题
+使用sudo apt-get remove后重新安装

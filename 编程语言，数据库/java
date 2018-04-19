@@ -1,0 +1,27 @@
+1.到官网下载相关的JDK安装文件  一般选择x64.tart.gz 
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 
+
+2.解压到 /usr/lib/jvm (可能要先mkdir)
+sudo tar zxvf jdk-xxxxxxxxxxxxx.tar.gz -C /usr/lib/jvm
+
+3.配置系统环境变量
+sudo gedit /etc/profile
+在最后添加上
+#  set java environment
+export JAVA_HOME=/usr/lib/jvm/jdkxxxxx  export JRE_HOME=${JAVA_HOME}/jre  export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  export PATH=${JAVA_HOME}/bin:$PATH 
+
+4. 安装
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdkxxx/bin/java 300  
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdkxxx/bin/javac 300 
+
+5. 切换java版本(系统很可能有其他java版本)
+　　update-alternatives --config java
+　　update-alternatives --config javac
+
+6. 验证java版本
+java -version
+javac -version
+
+7. 运行
+javac xxxx.java  生成class文件
+java xxxxxx  不需要加后缀.class，运行

@@ -1,0 +1,10 @@
+1. 到http://helpdesk.sysu.edu.cn/download下载linux 64位
+2. 到http://helpdesk.sysu.edu.cn/images/downloads/iNodeUG/H3C_iNode_Linux.pdf查看帮助指南
+
+
+sudo mkdir /usr/iNode
+cp /Downloads/xxxxx.tar.gz /usr/iNode
+cd /usr/iNode/iNodeClient
+tar -zxvf /usr/iNode/xxxxxx.tar.gz
+./install.sh
+找到生成的iNode配置802.1x连接即可

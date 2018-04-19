@@ -1,0 +1,17 @@
+1. keras
+conda install -c conda-forge keras=1.0.7
+
+2. xgboost
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost/python-package
+make -j4
+sudo python setup.py install 
+//安装后只能在该目录下使用，环境变量配置有误
+
+3. matplotlib
+sudo pip install matplotlib
+更新到最新版本
+sudo pip install -U matplotlib
+安装需要用到两个Ubuntu的库,freetype和png，无法由pip安装,使用下面命令解决
+sudo apt-get install libpng-dev
+sudo apt-get install libfreetype6-dev

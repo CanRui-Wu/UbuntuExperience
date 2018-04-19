@@ -1,0 +1,13 @@
+1.安装最新的版本打开web界面会404  原因未明，所以安装0.91版本
+http://www.projectfloodlight.org/download/ 直接download
+或者克隆分支 git clone git://github.com/floodlight/floodlight.git -b v0.91
+
+2.如果安装过程出现target java source 1.8
+就得去安装1.8版本的java，并切换到这个版本
+
+3.开启floodlight，到http://localhost:8080/ui/index.html
+java -jar target/floodlight.jar
+
+
+
+

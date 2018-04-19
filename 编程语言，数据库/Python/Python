@@ -1,0 +1,6 @@
+1. 版本切换
+sudo update-alternatives --config python
+然后选择对应的版本对应的号码
+
+2. Python3安装pip
+sudo apt-get install python3-pip

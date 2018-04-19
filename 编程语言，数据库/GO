@@ -1,0 +1,15 @@
+1.下载源码包
+https://golang.org/dl/　可能要用到VPN，用到的是linux-amd64.tar.gz
+
+2.解压到喜欢的位置
+用到的是/usr/local　目录
+
+3.编辑环境变量文件/etc/profile
+在最下面加上
+export GOROOT=/usr/local/go
+export GOBIN=/usr/local/go/bin
+export PATH=$PATH:$GOBIN
+export GOBIN=
+
+4.测试
+重启后，输入go version

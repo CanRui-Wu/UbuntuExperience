@@ -1,0 +1,7 @@
+1. aptitude:能很好的解决apt-get install的依赖问题
+i.e. aptitude install python3-pip nYY即可
+
+2. 解决no-upgrade
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install --upgrade xxx

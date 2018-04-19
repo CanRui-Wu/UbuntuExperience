@@ -1,0 +1,33 @@
+1.首先安装pip
+sudo apt-get install python-pip
+如果出现依赖问题
+sudo apt-get install aptitude
+然后aptitude install python-pip 根据提示对所需要的依赖包升降级或下载，我选的是先n否定现在的方案后y下载
+
+2.再安装python-dev
+sudo apt-get install python-dev
+有依赖问题同样用aptitude解决
+
+3.clone一份到本地
+git clone git://github.com/osrg/ryu.git
+
+4.赋予ryu目录下的setup.py 777权限并执行
+chmod 777 setup.py
+sudo python ./setup.py install
+
+5.检查，运行ryu-manager，如果报错缺乏依赖，或者版本不够
+则使用pip install [依赖名]安装或
+使用pip install --upgrade [依赖名]升级
+
+6.安装图形界面
+首先安装依赖Flask和gevent-websocket
+sudo pip install Flask
+sudo pip install gevent-websocket
+
+获取图形界面源码
+http://github.com/yamada-h/ryu/tree/gui-patch-v3-rebase下载gui-patch-v3- rebase软件压缩包，解压，把里面的ryu/gui目录复制到安装Ryu的源代码目录/ryu/ryu。
+
+测试
+进入到ryu/ryu/gui目录
+运行python controller.py
+打开浏览器界面进入 http://127.0.0.1:8000 即可查看

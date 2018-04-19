@@ -1,0 +1,20 @@
+Texlive+Texstudio
+1. 安装texlive,在sohu镜像下成功
+sudo apt install texlive-full
+
+2. 安装中文字体包
+sudo apt install latex-cjk-all
+
+3. 安装texstudio
+sudo apt install texstudio
+
+4. 寻找xelatex路径
+which xelatex
+
+5. 在texstudio的options下的configure
+设置xelatex的路径
+
+6. 中文输入
+sudo apt-get install fcitx*
+env QT_IM_MODULE=fcitx texstudio(使用这个直接打开，不要直接用texstudio或是其他打开方式)
+

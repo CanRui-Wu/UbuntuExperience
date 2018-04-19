@@ -1,0 +1,12 @@
+1. 确保自己的软件源可以更新且不报错
+sudo apt-get update
+
+2. 从git上复制项目到本地
+git clone git://github.com/mininet/mininet
+
+3. 到mininet的util目录下，运行install.sh -a表示全部安装
+cd /mininet/util
+./install.sh -a  
+
+4. 运行mininet看是否成功安装
+sudo mn
